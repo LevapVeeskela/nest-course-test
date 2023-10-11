@@ -6,6 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
+    "cloc-src": "cloc --exclude-dir=node_modules,dist,mongo-data-4.4,yarn.lock,package.json,package-lock.json .",
+    "cloc-dist": "cloc --match-d=/dist/ .",
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
